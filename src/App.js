@@ -10,8 +10,13 @@ function App() {
           {
             isAuthenticated ? (
               <div className= "google-home">
-             
              <Home />
+             {isAuthenticated && (
+        <>
+          <h1 className="username">UserName: <span className="username-value">{user.name}</span></h1>
+          <h1 className="useremail">UserEmail: <span className="useremail-value">{user.email}</span></h1>
+        </>
+      )}
              <button onClick={(e) => logout()} className='logout-button'>Logout</button>
              </div>
             ) : (

@@ -28,7 +28,7 @@
   }
 }
 .container {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,6 +90,28 @@
   outline: none;
   border: 0px none;
   border-radius: 4px;
+  margin: 10px;
   padding: 8px;
   color:white;
+}
+
+.username,
+.useremail {
+  font-size: 24px;
+  color: #333; /* default color for text */
+}
+
+.username-value {
+  color: blue; /* Change this color according to your preference */
+}
+
+.useremail-value {
+  color: green; /* Change this color according to your preference */
+}
+
+@media only screen and (max-width: 768px) {
+  .username,
+  .useremail {
+    font-size: 18px;
+  }
 }
